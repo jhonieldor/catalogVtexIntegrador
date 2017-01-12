@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://webservice-emporiopalotina.vtexcommerce.com.br/service.svc?wsdl" uri="wsdl/webservice-emporiopalotina.vtexcommerce.com.br/service.svc.wsdl"/>
+    <system systemId="http://webservice-emporiopalotina.vtexcommerce.com.br/AdminWebService/Service.svc?xsd=xsd2" uri="wsdl/webservice-emporiopalotina.vtexcommerce.com.br/AdminWebService/Service.svc.xsd_xsd2.xsd"/>
+    <system systemId="http://webservice-emporiopalotina.vtexcommerce.com.br/AdminWebService/Service.svc?xsd=xsd0" uri="wsdl/webservice-emporiopalotina.vtexcommerce.com.br/AdminWebService/Service.svc.xsd_xsd0.xsd"/>
+    <system systemId="http://webservice-emporiopalotina.vtexcommerce.com.br/AdminWebService/Service.svc?xsd=xsd1" uri="wsdl/webservice-emporiopalotina.vtexcommerce.com.br/AdminWebService/Service.svc.xsd_xsd1.xsd"/>
+    <system systemId="http://webservice-emporiopalotina.vtexcommerce.com.br/AdminWebService/Service.svc?xsd=xsd3" uri="wsdl/webservice-emporiopalotina.vtexcommerce.com.br/AdminWebService/Service.svc.xsd_xsd3.xsd"/>
+    <system systemId="http://webservice-emporiopalotina.vtexcommerce.com.br/AdminWebService/Service.svc?xsd=xsd4" uri="wsdl/webservice-emporiopalotina.vtexcommerce.com.br/AdminWebService/Service.svc.xsd_xsd4.xsd"/>
+</catalog>
