@@ -7192,14 +7192,16 @@ public class ObjectFactory {
         return new JAXBElement<String>(_CategoryDTOAdWordsRemarketingCode_QNAME, String.class, BrandDTO.class, value);
     }
 
+
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}}
-     * 
+     *
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts", name = "IsActive", scope = BrandDTO.class)
     public JAXBElement<Boolean> createBrandDTOIsActive(Boolean value) {
         return new JAXBElement<Boolean>(_StoreDTOIsActive_QNAME, Boolean.class, BrandDTO.class, value);
     }
+
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}

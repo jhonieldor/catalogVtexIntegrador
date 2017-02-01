@@ -1,9 +1,6 @@
 package br.com.ultra.integrador.vtexwsclients;
 
-import br.com.ultra.integrador.catalogVtex.IService;
-import br.com.ultra.integrador.catalogVtex.ObjectFactory;
-import br.com.ultra.integrador.catalogVtex.ProductDTO;
-import br.com.ultra.integrador.catalogVtex.Service;
+import br.com.ultra.integrador.catalogVtex.*;
 
 import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeFactory;
@@ -78,10 +75,21 @@ public class WSProductClient {
 
     }
 
+    public BrandDTO sendBrandDTO(String brand){
+        ObjectFactory objectFactory = new ObjectFactory();
+        BrandDTO brandDTO = objectFactory.createBrandDTO();
+        brandDTO.setDescription(objectFactory.createBrandDTODescription(brand));
+        brandDTO.setName(objectFactory.createBrandDTOName(brand));
+        brandDTO.setIsActive(objectFactory.createBrandDTOIsActive(new Boolean(Boolean.TRUE)));
+
+        Service wsClient = new Service();
+        return wsClient.getBasicHttpBindingIService().brandInsertUpdate(brandDTO);
+    }
 
     public String getStackTrace(Exception ex) {
         StringWriter errors = new StringWriter();
         ex.printStackTrace(new PrintWriter(errors));
         return errors.toString();
     }
+
 }

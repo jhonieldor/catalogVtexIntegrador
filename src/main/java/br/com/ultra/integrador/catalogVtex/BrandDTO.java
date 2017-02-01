@@ -2,10 +2,7 @@
 package br.com.ultra.integrador.catalogVtex;
 
 import javax.xml.bind.JAXBElement;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElementRef;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 
 
 /**
@@ -34,6 +31,7 @@ import javax.xml.bind.annotation.XmlType;
  * 
  * 
  */
+@XmlRootElement(name = "brand")
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "BrandDTO", namespace = "http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts", propOrder = {
     "adWordsRemarketingCode",
@@ -53,7 +51,7 @@ public class BrandDTO {
     protected JAXBElement<String> description;
     @XmlElementRef(name = "Id", namespace = "http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> id;
-    @XmlElementRef(name = "IsActive", namespace = "http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "IsActive" , namespace = "http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> isActive;
     @XmlElementRef(name = "Keywords", namespace = "http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts", type = JAXBElement.class, required = false)
     protected JAXBElement<String> keywords;

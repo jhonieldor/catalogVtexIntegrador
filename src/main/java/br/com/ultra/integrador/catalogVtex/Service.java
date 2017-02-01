@@ -1,15 +1,15 @@
 
 package br.com.ultra.integrador.catalogVtex;
 
-import java.net.Authenticator;
-import java.net.MalformedURLException;
-import java.net.PasswordAuthentication;
-import java.net.URL;
 import javax.xml.namespace.QName;
 import javax.xml.ws.WebEndpoint;
 import javax.xml.ws.WebServiceClient;
 import javax.xml.ws.WebServiceException;
 import javax.xml.ws.WebServiceFeature;
+import java.net.Authenticator;
+import java.net.MalformedURLException;
+import java.net.PasswordAuthentication;
+import java.net.URL;
 
 
 /**
@@ -28,13 +28,13 @@ public class Service
     private final static QName SERVICE_QNAME = new QName("http://tempuri.org/", "Service");
 
     static {
-        
+        Config config = new Config().getConfig();
         Authenticator myAuth = new Authenticator()
         {
             @Override
             protected PasswordAuthentication getPasswordAuthentication()
             {
-                return new PasswordAuthentication("ultrasistemas", "emporio321".toCharArray());
+                return new PasswordAuthentication(config.getUsername(), config.getPassword().toCharArray());
             }
         };
 
@@ -43,7 +43,7 @@ public class Service
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("http://webservice-emporiopalotina.vtexcommerce.com.br/service.svc?wsdl");
+            url = new URL(config.getWsdlURL());
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

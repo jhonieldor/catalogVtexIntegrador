@@ -24,7 +24,7 @@ public class TesteIntegracaoProduto {
         
         ProductDTO productDTO = objectFactory.createProductDTO();
         
-        productDTO.setName(objectFactory.createProductDTOName("Produto Teste 1"));
+        productDTO.setName(objectFactory.createProductDTOName("Produto Teste 2"));
         productDTO.setIsActive(objectFactory.createProductDTOIsActive(true));
         productDTO.setIsVisible(objectFactory.createProductDTOIsVisible(true));
         productDTO.setDescription(objectFactory.createProductDTODescription("Teste de integração"));
@@ -32,7 +32,7 @@ public class TesteIntegracaoProduto {
         productDTO.setCategoryId(objectFactory.createProductDTOCategoryId(2));
         productDTO.setDepartmentId(objectFactory.createProductDTODepartmentId(1));
         productDTO.setBrandId(objectFactory.createProductDTOBrandId(2000002));
-        productDTO.setLomadeeCampaignCode(objectFactory.createProductDTOLomadeeCampaignCode("PRODUTOTESTE"));
+        productDTO.setLomadeeCampaignCode(objectFactory.createProductDTOLomadeeCampaignCode("PRODUTOTESTE2"));
         productDTO.setTaxCode(objectFactory.createProductDTOTaxCode("5101"));
         productDTO.setSupplierId(null);
         productDTO.setShowWithoutStock(objectFactory.createProductDTOShowWithoutStock(false));
@@ -61,9 +61,9 @@ public class TesteIntegracaoProduto {
 //            descricaoClass = descricaoClass + " " + labelLinha + " " + produtoClass.getLinha() +
 //                    " " + labelColuna + " " + produtoClass.getColuna();
 //        }
-        String descricaoClass = "Produto Teste 1 Tamanho Médio Cor Azul";
+        String descricaoClass = "Produto Teste 2 Tamanho Médio Cor Azul";
         skuDTO.setName(objectFactory.createStockKeepingUnitDTOName(descricaoClass));
-        skuDTO.setProductName(objectFactory.createStockKeepingUnitDTOProductName("Produto Teste"));
+        skuDTO.setProductName(objectFactory.createStockKeepingUnitDTOProductName("Produto Teste 2"));
         skuDTO.setIsAvaiable(objectFactory.createStockKeepingUnitDTOIsAvaiable(true));
         skuDTO.setHeight(objectFactory.createStockKeepingUnitDTOHeight(new BigDecimal(0.00)));
         skuDTO.setLength(objectFactory.createStockKeepingUnitDTOLength(new BigDecimal(0.00)));
