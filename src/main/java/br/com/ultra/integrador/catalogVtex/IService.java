@@ -453,17 +453,17 @@ public interface IService {
             @WebParam(name = "sequence", targetNamespace = "http://tempuri.org/")
             Integer sequence);
 
-    /**
-     * @param orderId
-     * @return returns com.mycompany.testevtex.ArrayOfOrderInteractionDTO
-     */
-    @WebMethod(operationName = "OrderGetInteractions", action = "http://tempuri.org/IService/OrderGetInteractions")
-    @WebResult(name = "OrderGetInteractionsResult", targetNamespace = "http://tempuri.org/")
-    @RequestWrapper(localName = "OrderGetInteractions", targetNamespace = "http://tempuri.org/", className = "com.mycompany.testevtex.OrderGetInteractions")
-    @ResponseWrapper(localName = "OrderGetInteractionsResponse", targetNamespace = "http://tempuri.org/", className = "com.mycompany.testevtex.OrderGetInteractionsResponse")
-    public ArrayOfOrderInteractionDTO orderGetInteractions(
-            @WebParam(name = "orderId", targetNamespace = "http://tempuri.org/")
-            Integer orderId);
+//    /**
+//     * @param orderId
+//     * @return returns com.mycompany.testevtex.ArrayOfOrderInteractionDTO
+//     */
+//    @WebMethod(operationName = "OrderGetInteractions", action = "http://tempuri.org/IService/OrderGetInteractions")
+//    @WebResult(name = "OrderGetInteractionsResult", targetNamespace = "http://tempuri.org/")
+//    @RequestWrapper(localName = "OrderGetInteractions", targetNamespace = "http://tempuri.org/", className = "com.mycompany.testevtex.OrderGetInteractions")
+//    @ResponseWrapper(localName = "OrderGetInteractionsResponse", targetNamespace = "http://tempuri.org/", className = "com.mycompany.testevtex.OrderGetInteractionsResponse")
+//    public ArrayOfOrderInteractionDTO orderGetInteractions(
+//            @WebParam(name = "orderId", targetNamespace = "http://tempuri.org/")
+//            Integer orderId);
 
     /**
      * @param statusOrder
